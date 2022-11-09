@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Rasiga Resume</title>
+	</head>
+	<body>
+		<div>
+			<h1>Resume</h1>
+			<h3>Name: Rasiga.J</h3>
+			<h3>E-mail: rasigakindgirl@gmail.com</h3>
+			<h3>Mobile: 7010594411</h3>
+		</div>
+		<div>
+			<h1>Interests</h1>
+			<ol>
+				<li>Painting</li>
+				<li>Programming</li>
+				<li>Computer Science</li>
+				<li>Reading Books</li>
+			</ol>
+		</div>
+		<div>
+			<h1>Skills</h1>
+			<ul>
+				<li>Web Developing</li>
+				<li>App Developing</li>
+				<li>Programming</li>
+			</ul>
+		</div>
+		<div>
+			<h1>Education</h1>
+			<ul>
+				<b>SSLC:</b>
+				GV Higher Secondary School
+			</ul>
+			<ul>
+				<b>HSC:</b>
+				Vellalar Matriculation Higher Secondary School
+			</ul>
+			<ul>
+				<b>Graduation:</b>
+				KSR Institute for Engineering and Technology
+			</ul>
+		</div>
+		<div>
+			<h1>Extra Curricular</h1>
+			<ul>
+				<li>Eco-Club</li>
+				<li>Sports-Club</li>
+				<li>Coding-Club</li>
+			</ul>
+		</div>
+		<div>
+			<h1>Languages Known</h1>
+			<ul>
+				<li>English</li>
+				<li>Tamil</li>
+			</ul>
+		</div>
+		<div>
+			<h1>CGPA</h1>
+			<p>8.68 upto 6th semster</p>
+		</div>
+	</body>
+</html>
