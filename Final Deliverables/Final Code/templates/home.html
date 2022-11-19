@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website Design</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='./images/logo.png')}}" alt="" />
+
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="{{ url_for('static', filename='./images/cart.png')}}" alt="error" width="30px" height="30px">
+                <img src="{{ url_for('static', filename='./images/menu.png')}}" class="menu-icon" alt="error"
+                    width="30px" height="30px">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>
+                        Give Your Workout <br />
+                        A New Style!
+                    </h1>
+                    <p>
+                        Success isn't always about greatness. It's about consistency.
+                        Consistency <br />
+                        hard work gains success. Greatness will come.
+                    </p>
+                    <a href="#" class="btn">Explore Now &#8594</a>
+                </div>
+                <div class="col-2">
+                    <img src="{{ url_for('static', filename='./images/image1.png')}}" alt="error" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------Featured Categories --------------------------- -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="{{ url_for('static', filename='./images/category-1.jpg')}}" alt="error" />
+                </div>
+                <div class="col-3">
+                    <img src="{{ url_for('static', filename='./images/category-2.jpg')}}" alt="error" />
+                </div>
+                <div class="col-3">
+                    <img src="{{ url_for('static', filename='./images/category-3.jpg')}}" alt="error" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------Featured Products ----------------------------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-1.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+
+                <img src="{{ url_for('static', filename='./images/product-2.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-3.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-4.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-5.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-6.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-7.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-8.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-9.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-10.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-11.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename='./images/product-12.jpg')}}" alt="error">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>₹250</p>
+            </div>
+        </div>
+    </div>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img class="offer-img" src="{{ url_for('static', filename='./images/exclusive.png')}}" alt="error">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Offer</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The Mi smart Band 4 features a 39.8% larger AMOLED color full-touch display with adjustable
+                        brightness, so everything is clear as can be.</small>
+                    <br>
+                    <a class="btn" href="">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonal">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, recusandae maxime ipsa ab
+                        assumenda non necessitatibus repudiandae distinctio enim accusamus harum, voluptatibus
+                        repellendus aut unde molestias, dolorem officia fuga sapiente?</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+
+                    <img src="{{ url_for('static', filename='./images/user-1.png')}}">
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, recusandae maxime ipsa ab
+                        assumenda non necessitatibus repudiandae distinctio enim accusamus harum, voluptatibus
+                        repellendus aut unde molestias, dolorem officia fuga sapiente?</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <img src="{{ url_for('static', filename='./images/user-2.png')}}">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, recusandae maxime ipsa ab
+                        assumenda non necessitatibus repudiandae distinctio enim accusamus harum, voluptatibus
+                        repellendus aut unde molestias, dolorem officia fuga sapiente?</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <img src="{{ url_for('static', filename='./images/user-3.png')}}">
+                    <h3>Mabel Joe</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="{{ url_for('static', filename='./images/play-store.png')}}">
+                        <img src="{{ url_for('static', filename='./images/app-store.png')}}">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="{{ url_for('static', filename='./images/logo-white.png')}}">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copy-right">Copyright 2023 - Lingaraja</p>
+        </div>
+    </div>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "00a4e357-b1de-4715-9fec-01efd1a1721a", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "dcdd2307-7240-4be6-8975-3ad74354c329", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+        const menuIcon = document.querySelector('.menu-icon');
+        const itemss = document.querySelector("#MenuItems");
+
+
+        menuIcon.addEventListener('click', () => {
+            if (itemss.style.maxHeight == '0px') {
+                itemss.style.maxHeight = '200px';
+            } else {
+                itemss.style.maxHeight = '0px';
+            }
+        })
+    </script>
+</body>
+
+</html>

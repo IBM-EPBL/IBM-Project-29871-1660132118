@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animated Login Form | CodingNepal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}" />
+</head>
+
+<body>
+    <div class="center">
+        <img src="{{ url_for('static', filename='./images/logo.png')}}" alt="error" />
+        <h1>Login</h1>
+        <form action="{{url_for('login')}}" method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" class="id" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="/register">Signup</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        const btn = document.querySelector(".id");
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = '/home';
+        })
+    </script>
+
+</body>
+
+</html>

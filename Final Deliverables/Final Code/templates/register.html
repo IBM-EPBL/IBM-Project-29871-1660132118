@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animated Login Form | CodingNepal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}" />
+</head>
+
+<body>
+    <div class="center">
+        <img src="{{ url_for('static', filename='./images/logo.png')}}" alt="error" />
+        <h1>Register</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label>Conform Password</label>
+            </div>
+            <input type="submit" value="Register">
+            <div class="signup_link">
+                Already have a account <a href="/login">Login</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
